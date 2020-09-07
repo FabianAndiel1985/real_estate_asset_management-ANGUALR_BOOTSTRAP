@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { GoPreviousPageDirective } from './go-previous-page.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    GoPreviousPageDirective
   ],
   imports: [
     BrowserModule,
