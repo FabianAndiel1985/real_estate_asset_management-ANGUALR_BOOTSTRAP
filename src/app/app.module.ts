@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 import { ThankYouMessageComponent } from './thankyou/thank-you-message/thank-you-message.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ThankYouMessageComponent } from './thankyou/thank-you-message/thank-you
     GoPreviousPageDirective,
     ContactComponent,
     ThankyouComponent,
-    ThankYouMessageComponent
+    ThankYouMessageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
