@@ -12,7 +12,7 @@ const routes: Routes = [
   {path:'contact', component:ContactComponent},
   {path:'thankyou', component:ThankyouComponent,
   children:[
-  {path:'message/:salutation/:firstname/:lastname', component:ThankYouMessageComponent}
+  {path:'message', component:ThankYouMessageComponent}
   ]},
   {path: '**', component:PageNotFoundComponent}
 ];
