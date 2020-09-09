@@ -11,6 +11,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 import { ThankYouMessageComponent } from './thankyou/thank-you-message/thank-you-message.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     ThankyouComponent,
     ThankYouMessageComponent,
-    FooterComponent
+    FooterComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
