@@ -9,6 +9,7 @@ import { GoPreviousPageDirective } from './go-previous-page.directive';
 import { ContactComponent } from './contact/contact.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ThankyouComponent } from './thankyou/thankyou.component';
+import { ThankYouMessageComponent } from './thankyou/thank-you-message/thank-you-message.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
     PageNotFoundComponent,
     GoPreviousPageDirective,
     ContactComponent,
-    ThankyouComponent
+    ThankyouComponent,
+    ThankYouMessageComponent
   ],
   imports: [
     BrowserModule,
