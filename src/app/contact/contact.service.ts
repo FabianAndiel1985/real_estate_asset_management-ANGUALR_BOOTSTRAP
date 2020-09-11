@@ -19,6 +19,7 @@ export class ContactService {
   	 this.http.post('https://realestateassetmanagment.firebaseio.com/contacts.json',postdata).subscribe(response=> {
   	 this.reqMess.next("SUCCESS");	
 	 },(error) => {this.errorMess.next("Error: "+error.message);}
+
 	 )
   }
 
