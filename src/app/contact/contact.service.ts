@@ -16,7 +16,7 @@ export class ContactService {
 
   sendContactDataToDatabase(form) {
   	let postdata = {salutation:form.salutation,firstname:form.firstname, lastname:form.lastname,email: form.emailadress,adress:form.adress,zip:form.zip,city:form.city,message:form.message};		
-  	 this.http.post('https://realestateassetmanagment.firebaseio.com/contacts.json',postdata).subscribe(response=> {
+  	 this.http.post('https://realestateassetmancontacts.firebaseio.com/contacts.json',postdata).subscribe(response=> {
   	 this.reqMess.next("SUCCESS");	
 	 },(error) => {this.errorMess.next("Error: "+error.message);}
 
