@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NgForm} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import {Router} from '@angular/router';
+import {ContactService} from './contact.service';
+import { Subscription } from 'rxjs';
+
 
 @Component({
   selector: 'app-contact',
@@ -9,24 +12,29 @@ import {Router} from '@angular/router';
   styleUrls: ['./contact.component.css']
 })
 
-export class ContactComponent implements OnInit {
+export class ContactComponent implements OnInit, OnDestroy {
 
-  constructor(private router:Router, private http:HttpClient) { }
+  constructor(private contactService:ContactService,private router:Router, private http:HttpClient) { }
+
+  private error:boolean=false;
+  private subscription:Subscription;
 
   ngOnInit(): void {
+    this.subscription = this.contactService.errorMess.subscribe((data)=> {
+      this.error=true;
+    })
   }
 
-  onSubmit(form:NgForm) {
-	this.sendContactDataToDatabase(form.value);  
+  onSubmit(form) {
+	  this.contactService.sendContactDataToDatabase(form.value);
+    if(!this.error) {
+      this.router.navigate(['/thankyou/message'],{queryParams:{action:'contact',salutation:form.value.salutation,firstname:form.value.firstname,lastname:form.value.lastname}});
+    }
   }
 
-	sendContactDataToDatabase(form) {
-    
-	 let postdata = {salutation:form.salutation,firstname:form.firstname, lastname:form.lastname,email: form.emailadress,adress:form.adress,zip:form.zip,city:form.city,message:form.message};		
-   this.http.post('https://realestateassetmanagment.firebaseio.com/contacts.json',postdata).subscribe(responseData=> {
-	 })
 
-   this.router.navigate(['/thankyou/message'],{queryParams:{action:'contact',salutation:form.salutation,firstname:form.firstname,lastname:form.lastname}});
-	}
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
 
 }
