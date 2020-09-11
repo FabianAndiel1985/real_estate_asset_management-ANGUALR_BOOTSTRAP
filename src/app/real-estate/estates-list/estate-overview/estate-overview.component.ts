@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-estate-overview',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./estate-overview.component.css']
 })
 export class EstateOverviewComponent implements OnInit {
+  
+  @Input() estate;
 
   constructor() { }
 

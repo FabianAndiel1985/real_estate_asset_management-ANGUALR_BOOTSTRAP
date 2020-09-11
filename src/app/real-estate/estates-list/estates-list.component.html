@@ -1,1 +1,10 @@
 <p>estates-list works!</p>
+
+<div *ngIf="this.estates!=null">
+
+	<app-estate-overview *ngFor="let estate of estates" 
+	[estate]="estate"></app-estate-overview>
+
+	<!-- <p *ngFor="let estate of estates">{{estate.price}}<p> -->
+
+</div>
