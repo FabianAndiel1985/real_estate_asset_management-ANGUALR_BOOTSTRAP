@@ -12,6 +12,10 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
 import { ThankYouMessageComponent } from './thankyou/thank-you-message/thank-you-message.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { RealEstateComponent } from './real-estate/real-estate.component';
+import { EstatesListComponent } from './real-estate/estates-list/estates-list.component';
+import { EstateOverviewComponent } from './real-estate/estates-list/estate-overview/estate-overview.component';
+import { EstateDetailComponent } from './real-estate/estate-detail/estate-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { NavigationComponent } from './navigation/navigation.component';
     ThankyouComponent,
     ThankYouMessageComponent,
     FooterComponent,
-    NavigationComponent
+    NavigationComponent,
+    RealEstateComponent,
+    EstatesListComponent,
+    EstateOverviewComponent,
+    EstateDetailComponent
   ],
   imports: [
     BrowserModule,
