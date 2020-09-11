@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { EstateService } from '../../estate.service';
 
 @Component({
   selector: 'app-estate-overview',
@@ -9,9 +10,13 @@ export class EstateOverviewComponent implements OnInit {
   
   @Input() estate;
 
-  constructor() { }
+  constructor(private estateService:EstateService) { }
 
   ngOnInit(): void {
+  }
+
+  onChooseEstate(){
+  	this.estateService.emitChoosenEstate(this.estate);
   }
 
 }

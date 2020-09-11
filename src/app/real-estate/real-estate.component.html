@@ -1,5 +1,22 @@
 <p>real-estate works!</p>
 
 
-<app-estates-list></app-estates-list>
-<app-estate-detail></app-estate-detail>
+
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<app-estates-list></app-estates-list>
+		</div>
+		<div class="col-6">
+
+			<div *ngIf="choosenEstate == null;else elseSection "> 
+				Please chose an estate you want to know more about
+			</div>
+			
+			<ng-template #elseSection>
+				<app-estate-detail [choosenEstate]="choosenEstate"></app-estate-detail>
+			</ng-template>
+			
+		</div>
+	</div>
+</div>

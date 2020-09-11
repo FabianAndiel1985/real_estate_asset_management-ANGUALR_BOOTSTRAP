@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EstateService } from './estate.service';
 
 @Component({
   selector: 'app-real-estate',
@@ -9,13 +10,14 @@ import { Component, OnInit } from '@angular/core';
 
 export class RealEstateComponent implements OnInit {
  
+  public choosenEstate;
 
-  constructor() { }
-
-
+  constructor(private estateService:EstateService) { }
 
   ngOnInit(): void {
-  	
+  		this.estateService.estateSubject.subscribe((data)=>{
+  			this.choosenEstate = data;
+  		})
   }
 
 }
