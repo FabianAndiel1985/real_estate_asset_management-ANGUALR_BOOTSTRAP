@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: max(4vw,30px);
+}
+
+label,p {
+	font-family: 'Raleway', sans-serif;
+}
+
 input.ng-invalid.ng-touched {
 	border: 3px solid red;
 }
@@ -5,4 +17,11 @@ input.ng-invalid.ng-touched {
 input.ng-valid{
 	border:3px solid green;
 }
+
+
+
+
+
+
+
 
