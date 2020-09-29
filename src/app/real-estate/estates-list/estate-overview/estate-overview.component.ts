@@ -17,6 +17,7 @@ export class EstateOverviewComponent implements OnInit {
 
   onChooseEstate(){
   	this.estateService.emitChoosenEstate(this.estate);
+    window.scrollTo(0,0);
   }
 
 }
