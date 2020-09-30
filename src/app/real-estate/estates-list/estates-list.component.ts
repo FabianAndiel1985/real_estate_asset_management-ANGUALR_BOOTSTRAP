@@ -13,17 +13,10 @@ export class EstatesListComponent implements OnInit {
   public estates;	
 
   transformEstateData(response) {
-    console.log(response);
-  	let estatesArray = [];
-  	 for (var key in response) {
-        	let object = {};
-        	object["id"] = key;
-        	for (var key2 in response[key]) {	
-        		object[key2] = response[key][key2];
-        	}
-        	estatesArray.push(object);
-        }
-        return estatesArray;
+    
+    const{e1,e2,e3,e4,e5,e6} = response;
+
+    return [e1,e2,e3,e4,e5,e6];
   }
 
   ngOnInit(): void {
