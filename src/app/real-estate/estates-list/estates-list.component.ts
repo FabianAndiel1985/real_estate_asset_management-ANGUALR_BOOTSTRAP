@@ -13,6 +13,7 @@ export class EstatesListComponent implements OnInit {
   public estates;	
 
   transformEstateData(response) {
+    console.log(response);
   	let estatesArray = [];
   	 for (var key in response) {
         	let object = {};
