@@ -1,6 +1,7 @@
 {
 	"estates":{
 		"e1":{
+			"title":"Skyscraper",
 			"shortDescription":"short Description 1",
 			"price":"3901",
 			"location":"Maledvies",
@@ -11,6 +12,7 @@
 		}
 		,
 		"e2":{
+			"title":"Village",
 			"shortDescription":"short Description 2",
 			"price":"3903", 
 			"location":"Graz",
@@ -20,6 +22,7 @@
 			"imgSrc":"../../../assets/estate2.jpg"
 		},
 		"e3":{
+			"title":"House",
 			"shortDescription":"short Description 3",
 			"price":"3902", 
 			"location":"Maledvies",
@@ -29,6 +32,7 @@
 			"imgSrc":"../../../assets/estate3.jpg"
 		},
 		"e4":{
+			"title":"Castle",
 			"shortDescription":"short Description 4",
 			"price":"3904", 
 			"location":"Maledvies",
@@ -38,6 +42,7 @@
 			"imgSrc":"../../../assets/estate4.jpg"
 		},
 		"e5":{
+			"title":"Villa",
 			"shortDescription":"short Description 5",
 			"price":"3907", 
 			"location":"Maledvies",
@@ -47,6 +52,7 @@
 			"imgSrc":"../../../assets/estate5.jpg"
 		},
 		"e6":{
+			"title":"House",
 			"shortDescription":"short Description 6",
 			"price":"3907", 
 			"location":"Maledvies",
