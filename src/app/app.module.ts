@@ -16,6 +16,7 @@ import { RealEstateComponent } from './real-estate/real-estate.component';
 import { EstatesListComponent } from './real-estate/estates-list/estates-list.component';
 import { EstateOverviewComponent } from './real-estate/estates-list/estate-overview/estate-overview.component';
 import { EstateDetailComponent } from './real-estate/estate-detail/estate-detail.component';
+import { NavigationDirective } from './navigation/navigation.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { EstateDetailComponent } from './real-estate/estate-detail/estate-detail
     RealEstateComponent,
     EstatesListComponent,
     EstateOverviewComponent,
-    EstateDetailComponent
+    EstateDetailComponent,
+    NavigationDirective
   ],
   imports: [
     BrowserModule,
