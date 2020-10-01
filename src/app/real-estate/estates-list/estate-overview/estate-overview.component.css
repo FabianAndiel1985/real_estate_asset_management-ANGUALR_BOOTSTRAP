@@ -8,3 +8,12 @@ th {
 td, button{
 	font-family: 'Raleway', sans-serif;
 }
+
+
+@media only screen and (max-width: 767px) {
+  #estateOverviewCard {
+  		width:80%;
+	}
+}
+
+
