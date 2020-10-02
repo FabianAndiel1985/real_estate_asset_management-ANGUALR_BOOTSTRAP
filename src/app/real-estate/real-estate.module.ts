@@ -6,7 +6,7 @@ import { EstateOverviewComponent } from './estates-list/estate-overview/estate-o
 import { EstateDetailComponent } from './estate-detail/estate-detail.component';
 import {Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [ 
