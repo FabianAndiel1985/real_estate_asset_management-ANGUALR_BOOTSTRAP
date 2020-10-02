@@ -1,3 +1,23 @@
-#pageNotFound-vetical-container {
-	height:100vh;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+#pageNotFound-container {
+	height:80vh !important;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
 }
+
+p,button {
+	font-family: 'Raleway', sans-serif;
+}
+
+p {
+	font-size: max(3vw,27px);
+}
+
+button {
+	font-size: max(1.5vw,16px);
+}
+
+
