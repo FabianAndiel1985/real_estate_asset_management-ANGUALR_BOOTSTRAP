@@ -11,6 +11,7 @@ import {RealEstateComponent} from  './real-estate/real-estate.component';
 const routes: Routes = [	
   {path:'', component:LandingComponent},
   {path:'contact', component:ContactComponent},
+  // I want to move the following to the real-estate.module
   {path:'real-estate', component:RealEstateComponent},
   {path:'thankyou', component:ThankyouComponent,
   children:[
