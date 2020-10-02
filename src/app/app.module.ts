@@ -12,11 +12,9 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
 import { ThankYouMessageComponent } from './thankyou/thank-you-message/thank-you-message.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { RealEstateComponent } from './real-estate/real-estate.component';
-import { EstatesListComponent } from './real-estate/estates-list/estates-list.component';
-import { EstateOverviewComponent } from './real-estate/estates-list/estate-overview/estate-overview.component';
-import { EstateDetailComponent } from './real-estate/estate-detail/estate-detail.component';
 import { NavigationDirective } from './navigation/navigation.directive';
+import {RealEstateModule} from './real-estate/real-estate.module';
+
 
 @NgModule({
   declarations: [
@@ -29,17 +27,14 @@ import { NavigationDirective } from './navigation/navigation.directive';
     ThankYouMessageComponent,
     FooterComponent,
     NavigationComponent,
-    RealEstateComponent,
-    EstatesListComponent,
-    EstateOverviewComponent,
-    EstateDetailComponent,
     NavigationDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RealEstateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
