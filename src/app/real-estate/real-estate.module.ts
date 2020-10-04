@@ -19,9 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     	CommonModule,
     	FormsModule,
     	HttpClientModule,
-        // RouterModule.forChild([{
-            // {path:'real-estate', component:RealEstateComponent},
-        // }])
+        // RouterModule.forChild([
+        //     {path:'**', component:RealEstateComponent}
+        // ])
     ],
     exports: [
 	 RealEstateComponent,
