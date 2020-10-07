@@ -31,10 +31,10 @@ import {RealEstateModule} from './real-estate/real-estate.module';
   ],
   imports: [
     BrowserModule,
+    RealEstateModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    RealEstateModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
