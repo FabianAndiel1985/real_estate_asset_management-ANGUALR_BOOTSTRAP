@@ -8,13 +8,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { GoPreviousPageDirective } from './go-previous-page.directive';
 import { ContactComponent } from './contact/contact.component';
 import {HttpClientModule} from '@angular/common/http';
-import { ThankyouComponent } from './thankyou/thankyou.component';
-import { ThankYouMessageComponent } from './thankyou/thank-you-message/thank-you-message.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NavigationDirective } from './navigation/navigation.directive';
 import {RealEstateModule} from './real-estate/real-estate.module';
-
+import {ThankYouModule} from './thankyou/thank-you.module';
 
 @NgModule({
   declarations: [
@@ -23,8 +21,6 @@ import {RealEstateModule} from './real-estate/real-estate.module';
     PageNotFoundComponent,
     GoPreviousPageDirective,
     ContactComponent,
-    ThankyouComponent,
-    ThankYouMessageComponent,
     FooterComponent,
     NavigationComponent,
     NavigationDirective
@@ -32,6 +28,7 @@ import {RealEstateModule} from './real-estate/real-estate.module';
   imports: [
     BrowserModule,
     RealEstateModule,
+    ThankYouModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule
