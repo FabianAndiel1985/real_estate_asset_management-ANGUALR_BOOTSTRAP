@@ -11,7 +11,6 @@ import {HttpClientModule} from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NavigationDirective } from './navigation/navigation.directive';
-import {RealEstateModule} from './real-estate/real-estate.module';
 import {ThankYouModule} from './thankyou/thank-you.module';
 
 @NgModule({
@@ -27,7 +26,6 @@ import {ThankYouModule} from './thankyou/thank-you.module';
   ],
   imports: [
     BrowserModule,
-    RealEstateModule,
     ThankYouModule,
     AppRoutingModule,
     FormsModule,

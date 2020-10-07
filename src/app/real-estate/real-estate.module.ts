@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     	FormsModule,
     	HttpClientModule,
         RouterModule.forChild([
-            {path:'real-estate', component:RealEstateComponent}
+            {path:'', component:RealEstateComponent}
         ])
     ],
     exports: [

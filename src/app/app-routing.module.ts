@@ -7,6 +7,10 @@ import {ContactComponent} from './contact/contact.component';
 const routes: Routes = [	
   {path:'', component:LandingComponent},
   {path:'contact', component:ContactComponent},
+  {
+  	path:'real-estate',
+  	loadChildren:()=>import("./real-estate/real-estate.module").then(m=>m.RealEstateModule)
+  },
   {path: '**', component:PageNotFoundComponent}
 ];
 
