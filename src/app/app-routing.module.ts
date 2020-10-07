@@ -11,8 +11,6 @@ import {RealEstateComponent} from  './real-estate/real-estate.component';
 const routes: Routes = [	
   {path:'', component:LandingComponent},
   {path:'contact', component:ContactComponent},
-  //Den 'real-estate' path würde ich gerne ins Feature-Modul auslagern
-  {path:'real-estate', component:RealEstateComponent},
   {path:'thankyou', component:ThankyouComponent,
   children:[
   {path:'message', component:ThankYouMessageComponent}
