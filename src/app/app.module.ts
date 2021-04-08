@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NavigationDirective } from './navigation/navigation.directive';
 import {ThankYouModule} from './thankyou/thank-you.module';
+import { AuthComponent } from './auth/auth.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,14 +24,16 @@ import {ThankYouModule} from './thankyou/thank-you.module';
     ContactComponent,
     FooterComponent,
     NavigationComponent,
-    NavigationDirective
+    NavigationDirective,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
     ThankYouModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
