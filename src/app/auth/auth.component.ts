@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import User from './models/user';
 
 @Component({
   selector: 'app-auth',
@@ -24,6 +25,9 @@ export class AuthComponent implements OnInit {
 
   onSubmit() {
     console.log(this.myForm.value);
+    const user = new User(this.myForm.value.email, this.myForm.value.password);
+    console.log(user);
+    this.myForm.reset();
   }
 
 }
