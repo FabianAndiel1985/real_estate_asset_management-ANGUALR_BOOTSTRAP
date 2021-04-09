@@ -10,7 +10,7 @@ export class NavigationDirective {
    @HostListener('click')
   handleClick(event: MouseEvent) {
   	let burgerMenuButton = document.querySelector("div.collapse.navbar-collapse");
-  	
+
   	if (burgerMenuButton.classList.contains("show")) {
   		burgerMenuButton.classList.remove("show")
   	}
